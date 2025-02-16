@@ -13,6 +13,7 @@ export class PdfService {
   generatePdf(data:any[],fileName:string){
     const doc = new jsPDF();
 
+    console.log('test');
     
     const headers=['Id','Title','Description',
     'Due-Date','Priority','Status']
