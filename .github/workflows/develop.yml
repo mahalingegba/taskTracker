@@ -40,7 +40,7 @@ jobs:
       # - run: ls dist/taskTracker/
 
       - name: Deploy to GitHub Pages
-        uses: mahalingegba/taskTracker-action@main
+        uses: mahalingegba/taskTracker
         with:
              folder: github-taskTracker/dist/browser
              branch: prod-branch 
