@@ -39,8 +39,8 @@ jobs:
       - run: npm run build_prod
       # - run: ls dist/taskTracker/
 
-      - name: copy file via ssh key
-        uses: appleboy/scp-action@master
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/taskTracker-action@v4
         with:
           folder: github-taskTracker/dist/browser
           branch: prod-branch 
