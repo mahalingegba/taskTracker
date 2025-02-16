@@ -40,9 +40,10 @@ jobs:
       # - run: ls dist/taskTracker/
 
       - name: Deploy to GitHub Pages
-        uses: mahalingegba/taskTracker
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
              folder: github-taskTracker/dist/browser
              branch: prod-branch 
              token: ${{ secrets.GH_TOKEN }}
+
 
