@@ -36,7 +36,7 @@ jobs:
       - run: npm cache clean --force
       - run: npm install --save --legacy-peer-deps
       - run: npm install -g @angular/cli > /dev/null
-      - run: npm run build_stag
+      - run: npm run build_prod
       - run: ls dist/taskTracker/
 
       - name: copy file via ssh key
